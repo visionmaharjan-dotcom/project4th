@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.cart-section {
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.main-cart {
+    background-color: #ffffff;
+}
+
+.cart-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.product-img img {
+    max-height: 150px;
+}
+
+.product-img {
+    padding: 10px;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+
+.btn-sm {
+    padding: 1px; 
+    font-size: 1rem; 
+    height: 10px;
+}
+
+.form-control.text-center {
+    width: 60px;  /* Adjusted to a smaller width */
+    height: 25px;  /* Adjusted to a smaller height */
+    padding: 0.25rem;  /* Adjusted padding for a smaller size */
+}
+
+.page-link.count {
+    width: 50px; /* Smaller width for the quantity input box */
+    height: 30px; /* Smaller height for the quantity input box */
+    text-align: center; /* Center the text */
+    padding: 5px; /* Add padding for better alignment */
+    border: 1px solid #dee2e6; /* Border similar to Bootstrap inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.set_quantity {
+    margin-top: 5px; /* Adjust margin if needed */
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #5a6268;
+}
