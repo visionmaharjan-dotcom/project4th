@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../admin_and_user/connection.php");
+include("../admin/connection.php");
 
 $seller_id = $_SESSION['seller_id'];
 

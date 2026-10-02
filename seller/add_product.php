@@ -1,9 +1,9 @@
 <?php
 session_start();
-include("../admin_and_user/connection.php");
+include("../admin/connection.php");
 
 if (!isset($_SESSION['seller_id'])) {
-    header("Location: ../admin_and_user/signin_up.php");
+    header("Location: ../admin/signin_up.php");
     exit();
 }
 

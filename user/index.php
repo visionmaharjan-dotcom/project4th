@@ -210,26 +210,6 @@ include("header.php");
 
 <!-- footer section ends -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- custom js file link  -->
 <script src="main.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

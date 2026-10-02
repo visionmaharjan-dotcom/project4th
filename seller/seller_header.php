@@ -1,9 +1,9 @@
 <?php
-include("../admin_and_user/connection.php");
+include("../admin/connection.php");
 session_start();
 
 if (!isset($_SESSION['username']) || !isset($_SESSION['seller_id'])) {
-    header("Location:../admin_and_user/signin_up.php");
+    header("Location:../admin/signin_up.php");
     exit();
 }
 
@@ -17,7 +17,7 @@ $stmt_role->execute();
 $role_result = $stmt_role->get_result();
 $seller_row = $role_result->fetch_assoc();
 
-if (!$seller_row || $seller_row['role'] != 'Seller') {
+if (!$seller_row || $seller_row['role'] != 'seller') {
     header("Location:../user/index.php");
     exit();
 }
@@ -45,7 +45,7 @@ if (!$seller_row || $seller_row['role'] != 'Seller') {
             <li><a href="add_product.php">Add Product</a></li>
             <li><a href="manage_product.php">Manage Products</a></li>
             <li><a href="orders.php">Order Requests</a></li>
-            <li><a href="../admin_and_user/logout.php"><i class="fa fa-sign-out-alt"></i>Logout</a></li>
+            <li><a href="../admin/logout.php"><i class="fa fa-sign-out-alt"></i>Logout</a></li>
         </ul>
     </nav>
 </header>

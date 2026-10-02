@@ -75,13 +75,11 @@ if(isset($_POST["submit"]))
 
     $qry = mysqli_query($conn, $sql);
 
-    if ($qry) {
-        echo "<script>
-                alert('You have successfully registered. Now you may login.');
-                window.location.href = 'signup.php';
-              </script>";
-    } else {
-        echo "ERROR: Could not execute $sql. " . mysqli_error($conn);
-    }
+if ($qry) {
+    echo "Registration successful! User ID: " . mysqli_insert_id($conn);
+    exit();
+} else {
+    die("Registration failed: " . mysqli_error($conn));
+}
 }
 ?>

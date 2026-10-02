@@ -10,7 +10,7 @@
 </head>
 <body style="background-image: url('../images/bg2.jpg'); background-repeat: no-repeat; background-size: cover;">
 <?php
-include('../admin_and_user/connection.php');
+include('../admin/connection.php');
 
 if ($conn->connect_error) {
     echo "<script>alert('Error connecting to database: " . $conn->connect_error . "')</script>";
@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: ../admin_and_user/signin_up.php");
+    header("Location: ../admin/signin_up.php");
     exit();
 }
 
